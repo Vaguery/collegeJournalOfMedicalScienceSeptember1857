@@ -1,0 +1,33 @@
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[9pt,a5paper]{memoir}
+\usepackage{fontspec,xltxtra,xunicode}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text, Ligatures={Common}]{LTC Goudy Modern Pro}
+\setsansfont[Mapping=tex-text, Ligatures={Common}]{Lucida Grande}
+
+
+\frenchspacing
+\plainfootnotes
+
+\newcommand{\typo}[2]{\textbf{#2}\marginpar{\tiny{``{#1}''? ---\textit{Ed.}}}}
+
+\begin{document}
+
+\input{../tex/0001.tex}
+\input{../tex/0002.tex}
+\input{../tex/0003.tex}
+\input{../tex/0004.tex}
+\input{../tex/0005.tex}
+\input{../tex/0006.tex}
+\input{../tex/0007.tex}
+\input{../tex/0008.tex}
+\input{../tex/0009.tex}
+\input{../tex/0010.tex}
+
+
+\end{document}

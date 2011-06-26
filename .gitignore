@@ -1,0 +1,7 @@
+work/*.log
+work/*.pdf
+work/*.aux
+orig/*
+*.tif
+job.JBD
+*.DS_Store
