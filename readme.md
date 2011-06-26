@@ -1,0 +1,1 @@
+Re-typesetting experiment: scanned pages of the September 1857 issue of _The College Journal of Medical Science_, OCRed with ABBYY FineReader 9 to unicode html files. Writing scripts to munge these into LaTeX files, which in turn are stitched together in /work to create the full typeset book from scratch.
