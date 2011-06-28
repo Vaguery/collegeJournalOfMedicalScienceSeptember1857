@@ -15,7 +15,7 @@ pages.each do |page|
       str.gsub!(/^.+\<body\>/m,"")
       str.gsub!(/(\n|\s)*<\/body.+$/m,"")
       File.open(newfile, "w") do |tex_file|
-        tex_file.puts str.strip
+        tex_file.puts str.strip + '\endinput'
       end
     else
       puts "   #{newfile} exists"
