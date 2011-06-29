@@ -14,6 +14,7 @@ The individual page TeX files are stitched together and typeset in `work/med.tex
 ## Task list for cleaning up the automatically-generated `.tex` files
 
 In no particular order:
+
 * **add the file**: edit `work/med.tex` to append an `\input{}` macro to load the file into the document's backbone
 * **remove html chaff**: ABBYY saves a lot of extra junk, and the scripts I've written don't remove it all (yet); best to search for `<` and `>` throughout
 * **check all hyphens**: hand-remove end-of-line hyphens that need to be cleaned up (for some reason, ABBYY doesn't want to write the "optional hyphen" character, even though it uses it internally). Set en- and em-dashes as normal in LaTeX: en-dashes as `--` and em-dashes as `---`
