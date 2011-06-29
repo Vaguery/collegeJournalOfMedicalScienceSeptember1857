@@ -11,8 +11,10 @@ The individual page TeX files are stitched together and typeset in `work/med.tex
 * `html2tex.rb` assumes a lot, and is ripe for refactoring. It runs through all the files in the `html` directory, and "translates" them into identically-named `.tex` files by running through an ad hoc series of regular expression substitutions.
 * `straightener.rb` works through the folder of original page scans (not part of the repository; email me for a 12 Gb copy), and uses ImageMagick to straighten, clean up, and shrink them into something that's more useful for proofreading the text, and might even be small enough to serve in an (eventual) proofreading interface.
 
-## Task list
+## Task list for cleaning up the automatically-generated `.tex` files
 
+In no particular order:
+* **add the file**: edit `work/med.tex` to append an `\input{}` macro to load the file into the document's backbone
 * **remove html chaff**: ABBYY saves a lot of extra junk, and the scripts I've written don't remove it all (yet); best to search for `<` and `>` throughout
 * **check all hyphens**: hand-remove end-of-line hyphens that need to be cleaned up (for some reason, ABBYY doesn't want to write the "optional hyphen" character, even though it uses it internally). Set en- and em-dashes as normal in LaTeX: en-dashes as `--` and em-dashes as `---`
 * **wrap page number in markup**: I've written a simple macro `\oldpage{}` that sets the original scan's page number in the margin of the rendered TeX file
