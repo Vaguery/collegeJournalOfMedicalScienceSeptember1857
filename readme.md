@@ -27,4 +27,4 @@ In no particular order:
 * **spacing after initials and abbreviations**: Check the periods throughout: end-of-sentence periods should remain as normal, but there are many abbreviations and initials, which should be set like this: `Dr.\ G.\ W.\ Carver`, or `Tinct.\ Ammon.\ ...`, so the spaces are *explicit*.
 * **fix punctuation spacing**: The oldstyle rules in the original publication include spaces before semicolons, colons, and some other marks. Check and remove these (they can be re-introduced more easily programmatically, if you're a stickler)
 * **prescriptions**: Some special typographic characters, like "recipe" and "ounce", are only present in a few unicode fonts. I've used the sans-serif font to encode these where they appear.
-* **document structure**: For the moment, I'm using chapters for articles.
+* **document structure**: For the moment, I'm using `\section*{Title}` for each of the articles.
