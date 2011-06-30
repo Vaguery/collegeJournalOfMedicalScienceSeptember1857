@@ -5,6 +5,7 @@
 
 \documentclass[9pt,a5paper]{memoir}
 \usepackage{fontspec,xltxtra,xunicode}
+\usepackage{hyperref}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont[Mapping=tex-text, Ligatures={Common}]{P22 Foxtrot Pro}
@@ -18,6 +19,9 @@
 \newcommand{\oldpage}[1]{\marginpar{\centering{}\tiny{pg. {#1}}}}
 
 \begin{document}
+
+\chapter*{Transcriber's Note}This document is a draft, being re-typeset page by page, based on scanned and OCRed images of the original 1857 book's pages. See \href{http://github.com/Vaguery/collegeJournalOfMedicalScienceSeptember1857}{the github project} for more information, or to fork and work on the project.
+\chapter*{Trancription begins:}
 
 \input{../tex/0001.tex}
 \input{../tex/0002.tex}
