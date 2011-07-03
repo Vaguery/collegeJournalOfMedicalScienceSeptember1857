@@ -1,5 +1,6 @@
-work/*.log
-work/*.aux
+*.log
+*.aux
+*.out
 orig/*
 *.tif
 job.JBD

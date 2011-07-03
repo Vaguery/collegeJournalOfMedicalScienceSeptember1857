@@ -1,0 +1,94 @@
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[9pt,a5paper]{memoir}
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{hyperref}
+\usepackage{lettrine}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text, Ligatures={Common}]{P22 Foxtrot Pro}
+\setsansfont[Mapping=tex-text, Ligatures={Common}]{Lucida Grande}
+
+
+\frenchspacing
+\plainfootnotes
+
+%%
+% inline semantic markup
+%%
+\newcommand{\booktitle}[1]{\textit{#1}}
+\newcommand{\foreign}[1]{\textit{#1}}
+\newcommand{\latinate}[1]{\textit{#1}}
+
+%%
+% sidenote macros
+%%
+\newcommand{\typo}[2]{\textbf{#2}\marginpar{\tiny{{#1}/? ---\textit{Ed.}}}}
+\newcommand{\oldpage}[1]{\marginpar{\centering{}\tiny{pg. {#1}}}}
+
+%%
+% typographic symbol macros
+%%
+\newcommand{\prescription}{\textsf{℞}}
+\newcommand{\ounce}{\textsf{℥}}
+\newcommand{\dram}{\textsf{ʒ}}
+\newcommand{\scruple}{\textsf{℈}}
+
+\begin{document}
+
+\chapter*{Transcriber's Note}This document is a draft, being re-typeset page by page, based on scanned and OCRed images of the original 1857 book's pages. See \href{http://github.com/Vaguery/collegeJournalOfMedicalScienceSeptember1857}{the github project} for more information, or to fork and work on the project.
+\chapter*{Transcription begins:}
+
+\input{pages/edited/0001.tex}
+\input{pages/edited/0002.tex}
+\input{pages/edited/0003.tex}
+\input{pages/edited/0004.tex}
+\input{pages/edited/0005.tex}
+\input{pages/edited/0006.tex}
+\input{pages/edited/0007.tex}
+\input{pages/edited/0008.tex}
+\input{pages/edited/0009.tex}
+\input{pages/edited/0010.tex}
+\input{pages/edited/0011.tex}
+\input{pages/edited/0012.tex}
+\input{pages/edited/0013.tex}
+\input{pages/edited/0014.tex}
+\input{pages/edited/0015.tex}
+\input{pages/edited/0016.tex}
+\input{pages/edited/0017.tex}
+\input{pages/edited/0018.tex}
+\input{pages/edited/0019.tex}
+\input{pages/edited/0020.tex}
+\input{pages/edited/0021.tex}
+\input{pages/edited/0022.tex}
+\input{pages/edited/0023.tex}
+\input{pages/edited/0024.tex}
+\input{pages/edited/0025.tex}
+\input{pages/edited/0026.tex}
+\input{pages/edited/0027.tex}
+\input{pages/edited/0028.tex}
+\input{pages/edited/0029.tex}
+\input{pages/edited/0030.tex}
+\input{pages/edited/0031.tex}
+\input{pages/edited/0032.tex}
+\input{pages/edited/0033.tex}
+\input{pages/edited/0034.tex}
+\input{pages/edited/0035.tex}
+\input{pages/edited/0036.tex}
+\input{pages/edited/0037.tex}
+\input{pages/edited/0038.tex}
+\input{pages/edited/0039.tex}
+\input{pages/edited/0040.tex}
+\input{pages/edited/0041.tex}
+\input{pages/edited/0042.tex}
+\input{pages/edited/0043.tex}
+\input{pages/edited/0044.tex}
+\input{pages/edited/0045.tex}
+\input{pages/edited/0046.tex}
+\input{pages/edited/0047.tex}
+\input{pages/edited/0048.tex}
+
+\end{document}
