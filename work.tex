@@ -7,9 +7,10 @@
 \usepackage{fontspec,xltxtra,xunicode}
 \usepackage{hyperref}
 \usepackage{lettrine}
+\usepackage{xparse}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont[Mapping=tex-text, Ligatures={Common}]{P22 Foxtrot Pro}
+\setromanfont[Mapping=tex-text, Ligatures={Common}]{LTC Kennerley Pro}
 \setsansfont[Mapping=tex-text, Ligatures={Common}]{Lucida Grande}
 
 
@@ -35,16 +36,16 @@
 \newcommand{\ThisJournal}[1]{\textsc{#1}}
 \newcommand{\ProperName}[1]{\textsc{#1}}
 \newcommand{\md}{\textsc{M.\,D.}}
-\newcommand{\byline}[1]{by \textsc{\MakeLowercase{#1}}}
 
+\NewDocumentCommand\byline{sm}{by \textsc{\MakeLowercase{#2}}\IfBooleanTF#1{}{.}}
 
 %%
 %
 % sidenote macros
 %
 %%
-\newcommand{\typo}[2]{\textbf{#2}\marginpar{\tiny{{#1}/? ---\textit{Ed.}}}}
-\newcommand{\oldpage}[1]{\marginpar{\centering{}\tiny{pg. {#1}}}}
+\newcommand{\typo}[2]{\textbf{#2}\marginpar{\centering\tiny{{#1}/? ---\textit{Ed.}}}}
+\newcommand{\oldpage}[1]{\marginpar{\centering\tiny{pg. {#1}}}}
 
 
 %%
