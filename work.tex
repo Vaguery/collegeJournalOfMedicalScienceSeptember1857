@@ -10,7 +10,7 @@
 \usepackage{xparse}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont[Mapping=tex-text, Ligatures={Common}]{LTC Kennerley Pro}
+\setromanfont[Mapping=tex-text, Ligatures={Common}]{Livory}
 \setsansfont[Mapping=tex-text, Ligatures={Common}]{Lucida Grande}
 
 
@@ -29,7 +29,7 @@
 
 %%
 %
-% document-specific stylesheet macros
+% stylesheet and associated macros
 %
 %%
 \newcommand{\SectionStartWords}[1]{\textsc{#1}}
@@ -37,7 +37,11 @@
 \newcommand{\ProperName}[1]{\textsc{#1}}
 \newcommand{\md}{\textsc{M.\,D.}}
 
-\NewDocumentCommand\byline{sm}{by \textsc{\MakeLowercase{#2}}\IfBooleanTF#1{}{.}}
+\NewDocumentCommand\byline{sm}{\noindent\begin{center}by \textsc{\MakeLowercase{#2}}\IfBooleanTF#1{}{.}\end{center}}
+
+\setsecheadstyle{\normalsize\centering\MakeUppercase}
+\setsubsecheadstyle{\large\centering\MakeUppercase}
+
 
 %%
 %
@@ -60,9 +64,12 @@
 
 \begin{document}
 
-\chapter*{Transcriber's Note}This document is a draft, being re-typeset page by page, based on scanned and OCRed images of the original 1857 book's pages. See \href{http://github.com/Vaguery/collegeJournalOfMedicalScienceSeptember1857}{the github project} for more information, or to fork and work on the project.
-\chapter*{Transcription begins:}
 
+
+\frontmatter
+\chapter*{Transcriber's Note}This document is a draft, being re-typeset page by page, based on scanned and OCRed images of the original 1857 book's pages. See \href{http://github.com/Vaguery/collegeJournalOfMedicalScienceSeptember1857}{the github project} for more information, or to fork and work on the project.
+\cleardoublepage
+\mainmatter
 \input{pages/edited/0001.tex}
 \input{pages/edited/0002.tex}
 \input{pages/edited/0003.tex}
@@ -111,5 +118,5 @@
 \input{pages/edited/0046.tex}
 \input{pages/edited/0047.tex}
 \input{pages/edited/0048.tex}
-
+\backmatter
 \end{document}
