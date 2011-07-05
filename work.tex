@@ -32,6 +32,21 @@
 % stylesheet and associated macros
 %
 %%
+\newcommand{\nameplate}[3]{
+	\begin{center}
+		\large THE \\
+		\Huge \vspace*{\baselineskip} COLLEGE JOURNAL  \vspace*{\baselineskip} \\ 
+		\LARGE OF MEDICAL SCIENCE. \vspace*{\baselineskip}
+	\end{center}
+	\normalsize
+	
+	\hrule\vspace{0.2em}
+	\footnotesize\textsc{Vol.~#1.}\hfill
+	\normalsize{}\MakeUppercase{#3}.\hfill
+	\footnotesize\textsc{No.~#2.}
+	\vspace{0.2em}\hrule
+}
+
 \newcommand{\SectionStartWords}[1]{\textsc{#1}}
 \newcommand{\ThisJournal}[1]{\textsc{#1}}
 \newcommand{\ProperName}[1]{\textsc{#1}}
