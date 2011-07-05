@@ -3,14 +3,14 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-\documentclass[9pt,smallroyalvopaper]{memoir}
+\documentclass[9pt,mediumvopaper]{memoir}
 \usepackage{fontspec,xltxtra,xunicode}
 \usepackage{hyperref}
 \usepackage{lettrine}
 \usepackage{xparse}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont[Mapping=tex-text, Ligatures={Common}]{Livory}
+\setromanfont[Mapping=tex-text, Ligatures={Common}]{Scotch Modern}
 \setsansfont[Mapping=tex-text, Ligatures={Common}]{Lucida Grande}
 
 \setlength{\pdfpagewidth}{\paperwidth}
@@ -67,7 +67,7 @@
 %
 %%
 \newcommand{\typo}[2]{\textbf{#2}\marginpar{\centering\tiny{{#1}/? ---\textit{Ed.}}}}
-\newcommand{\oldpage}[1]{\marginpar{\centering\tiny{pg. {#1}}}}
+\newcommand{\oldpage}[1]{\marginpar{\centering\tiny{#1}}}
 
 
 %%
