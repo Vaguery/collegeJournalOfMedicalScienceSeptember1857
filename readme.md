@@ -2,6 +2,8 @@
 
 I've scanned pages of the September 1857 issue of _The College Journal of Medical Science_, OCRed these to html (to preserve some formatting) with ABBYY FineReader 9, and am converting those html files into LaTeX files.
 
+**The latest PDF version (as constructed on my computer) can be downloaded (via "view raw") from http://github.com/Vaguery/collegeJournalOfMedicalScienceSeptember1857/blob/master/work.pdf**
+
 A collection of scripts and checklists is coming out of this: scripts to do the heavy lifting translating self-contained HTML to TeX intended to be strung together into a single work, and checklists of small proofreading and hand-formatting tasks that need to be completed on each page.
 
 The individual page TeX files are stitched together and typeset in `./work.tex`, using XeLaTeX. Be sure to check the font assignments; I'm using purchased postscript fonts I own.
