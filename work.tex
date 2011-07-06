@@ -8,6 +8,7 @@
 \usepackage{hyperref}
 \usepackage{lettrine}
 \usepackage{xparse}
+\usepackage{pifont}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont[Mapping=tex-text, Ligatures={Common}]{Scotch Modern}
@@ -85,8 +86,9 @@
 
 
 \frontmatter
-\chapter*{Transcriber's Note}This document is a draft, being re-typeset page by page, based on scanned and OCRed images of the original 1857 book's pages. See \href{http://github.com/Vaguery/collegeJournalOfMedicalScienceSeptember1857}{the github project} for more information, or to fork and work on the project.
+\input{./transcribers-notes.tex}
 \cleardoublepage
+
 \mainmatter
 \input{pages/edited/0001.tex}
 \input{pages/edited/0002.tex}
