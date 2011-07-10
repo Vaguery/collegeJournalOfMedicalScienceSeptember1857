@@ -58,8 +58,15 @@
 
 \NewDocumentCommand\byline{sm}{\noindent\begin{center}\textsc{by \MakeLowercase{#2}}\IfBooleanTF#1{}{.}\end{center}}
 
-\setsecheadstyle{\normalsize\centering\MakeUppercase}
-\setsubsecheadstyle{\large\centering\MakeUppercase}
+\chapterstyle{article}
+\renewcommand{\clearforchapter}{}
+\renewcommand{\chaptitlefont}{\small \centering \MakeUppercase} 
+
+\setsecheadstyle{\large\centering\MakeUppercase}
+\setaftersecskip{0.3em}
+
+\setsubsecheadstyle{\footnotesize\centering\MakeUppercase}
+\setbeforesubsecskip{0.3em}
 
 %%
 %
@@ -166,5 +173,5 @@
 \input{pages/edited/0046.tex}
 \input{pages/edited/0047.tex}
 \input{pages/edited/0048.tex}
-\backmatter
+\backmatter*
 \end{document}
