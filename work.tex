@@ -59,8 +59,10 @@
 \NewDocumentCommand\byline{sm}{\noindent\begin{center}\textsc{by \MakeLowercase{#2}}\IfBooleanTF#1{}{.}\end{center}}
 
 \chapterstyle{article}
+
+\newfontfamily\clarendonfont{Clarendon Text Pro}
 \renewcommand{\clearforchapter}{}
-\renewcommand{\chaptitlefont}{\small \centering \MakeUppercase} 
+\renewcommand{\chaptitlefont}{\clarendonfont \addfontfeatures{LetterSpace=20.0} \small \centering \MakeUppercase} 
 \renewcommand{\afterchaptertitle}{\vskip 0.3em \rule{6em}{0.4pt}\vskip 0.3em}
 
 \setsecheadstyle{\large\centering\MakeUppercase}
