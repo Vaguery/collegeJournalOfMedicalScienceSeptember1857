@@ -9,6 +9,7 @@
 \usepackage{lettrine}
 \usepackage{xparse}
 \usepackage{pifont}
+\usepackage{float}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont[Mapping=tex-text, Ligatures={Common}]{Scotch Modern}
@@ -90,6 +91,12 @@
 \newcommand{\ounce}{\textsf{℥}}
 \newcommand{\dram}{\textsf{ʒ}}
 \newcommand{\scruple}{\textsf{℈}}
+
+
+\newcommand{\smallornament}{\begin{figure}[H]
+  \centering
+  \includegraphics{pages/illustrations/bullet_divider.jpg}
+\end{figure}}
 
 \begin{document}
 
@@ -177,5 +184,4 @@
 \input{pages/edited/0046.tex}
 \input{pages/edited/0047.tex}
 \input{pages/edited/0048.tex}
-\backmatter*
 \end{document}
