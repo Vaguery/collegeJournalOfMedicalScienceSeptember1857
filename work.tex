@@ -52,6 +52,7 @@
 	\vspace{0.2em}\hrule
 }
 
+
 \newcommand{\SectionStartWords}[1]{\textsc{#1}}
 \newcommand{\ThisJournal}[1]{\textsc{#1}}
 \newcommand{\ProperName}[1]{\textsc{#1}}
@@ -60,6 +61,13 @@
 \NewDocumentCommand\byline{sm}{\noindent\begin{center}\textsc{by \MakeLowercase{#2}}\IfBooleanTF#1{}{.}\end{center}}
 
 \chapterstyle{article}
+
+\pagestyle{headings}
+
+\nouppercaseheads
+\makeevenhead{headings}{\thepage}{\textit{«section title»}}{[September,}
+\makeoddhead{headings}{1857.]}{\textit{«section title»}}{\thepage}
+
 
 \newfontfamily\clarendonfont{Clarendon Text Pro}
 \renewcommand{\clearforchapter}{}
